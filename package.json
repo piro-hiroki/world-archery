@@ -1,0 +1,28 @@
+{
+  "name": "@piroki/world-archery",
+  "version": "0.1.0",
+  "description": "A convenient wrapper for the WorldArchery official API, making it easier to access and manage archery competition data efficiently.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hiroki Iwashita",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts"
+}
